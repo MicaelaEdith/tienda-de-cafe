@@ -19,7 +19,6 @@ footer{
     display: flex;
     margin: 0;
     padding: 3em;
-    margin-top: 50vh;
 }
 
 footer div{
@@ -55,12 +54,6 @@ footer a:hover{
 
 footer .text-align-center{
     width: 30%;
-}
-
-.text-align-center form{
-    width: 75%;
-    margin: auto;
-
 }
 
 footer input{
