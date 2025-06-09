@@ -35,10 +35,11 @@ main p{
 }
 
 main span{
-    margin: 6vh;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
     font-weight: 600;
     font-size: large;
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 hr{
@@ -146,4 +147,43 @@ flex-direction: column;
     color: whitesmoke;
     font-family: "Lato";
     font-weight: 400;
+}
+
+.parallax-header {
+  height: 55vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  margin-top: 4vh;
+  margin-bottom: 0;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+h1{
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.7em;
+  margin-left: 2vw;
+}
+
+.ph1{
+      background-image: url("../assets/tutoriales/Header_Espresso02.jpg");
+}
+
+.receta{
+    background-color: #E8E8E8;
+    width: 100%;
+    padding-top: 4vh;
+    padding-bottom: 3vh;
+    margin: 0;
+    margin-top: 9px;
+}
+
+.receta p{
+    margin-bottom: 2vh;
 }
