@@ -6,7 +6,7 @@
   --background-color: #111111;
   --primary-color: #c7a17a;
   --links-color: rgb(177, 177, 177);
-  font-family: "Lato, sans serif";
+  font-family: "Lato";
   --text-color: rgb(111, 111, 111);
 }
 
@@ -15,14 +15,13 @@ main{
     font-weight: 200;
     font-style: normal;
     color: var(--background-color);
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     margin: auto;
     margin-top: 5vh;
-    border-bottom: solid 1px var(--text-color);
 }
 
 main div{
@@ -32,6 +31,7 @@ main div{
 main p{
     margin: 3px;
     color: var(--text-color);
+    font-size: 1.1em;
 }
 
 main span{
@@ -41,24 +41,109 @@ main span{
     color: var(--text-color)
 }
 
+hr{
+    border: solid 1px rgb(233, 232, 232);
+    margin: 5vw;
+}
+
 section{
     display: flex;
     flex-wrap: wrap;
-
+    margin: auto;
+    margin-bottom: 6vh;
+    width: 80%;
 }
 
 .tutorial{
-    width: 40%;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  background-color: #c7a17a;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  position: relative;
+  overflow: hidden;
+  justify-content: flex-end;
+  z-index: 0;
+  width: 450px;
+  height: 300px;
+  color: white;
+}
+
+.tutorial::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+  z-index: -2;
+}
+
+.tutorial::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  z-index: -1;
+}
+
+.tutorial:hover::before{
+  transform: scale(1.1);
+}
+
+
+.tutorial:hover::after{
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.tutorial:nth-of-type(1)::before{
+    background-image: url("../assets/tutoriales/Tienda-de-Café-tutorial_1.jpg");
+}
+
+
+.tutorial:nth-of-type(2)::before{
+    background-image: url("../assets/tutoriales/Tienda-de-Café-tutorial_2.jpg");
+}
+
+.tutorial:nth-of-type(3)::before{
+    background-image: url("../assets/tutoriales/Tienda-de-Café-tutorial_3.jpg");
+}
+
+
+.tutorial:nth-of-type(4)::before{
+    background-image: url("../assets/tutoriales/Tienda-de-Café-tutorial_4.jpg");
+}
+
+.tutorial:nth-of-type(5)::before{
+    background-image: url("../assets/tutoriales/Tienda-de-Café-tutorial_5.jpg");
+}
+
+
+.tutorial:nth-of-type(6)::before{
+    background-image: url("../assets/tutoriales/Tienda-de-Café-tutorial_6.jpg");
+}
+
+
+.data-tutorial{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+flex-direction: column;
     margin: auto;
-    background-color:#c7a17a;
-    padding: 15px;
+}
+
+
+.tutorial h2{
+    font-family: "Oswald";
+    color: whitesmoke;
 }
 
 .tutorial a{
-    text-decoration: none;
+    text-decoration-color: var(--primary-color);
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+    color: whitesmoke;
+    font-family: "Lato";
+    font-weight: 400;
 }
