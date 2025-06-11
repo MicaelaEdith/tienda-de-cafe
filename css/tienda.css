@@ -11,11 +11,63 @@
   
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3vw 2vw;
+  justify-content: flex-start;
+  gap: 4vw;
+  box-sizing: border-box;
 }
 
-.card img:hover{
-    src: url();
+
+.card {
+  width: calc((100% - 4vw * 2) / 3);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 4vh;
+}
+
+
+.card span{
+    font-family: "Lato";
+    color: rgb(79, 79, 79);
+    font-weight: 600;
+    margin: 10px;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(1);
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+
+.card:hover .img-hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.img-base {
+  display: block;
+  width: 100%;
+  height: auto;
 }
