@@ -71,3 +71,10 @@ main {
   width: 100%;
   height: auto;
 }
+
+@media (max-width: 992px){
+
+  .card {
+    width: calc((100% - 4vw) / 2);
+  }
+}
