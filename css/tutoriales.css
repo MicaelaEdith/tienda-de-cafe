@@ -182,6 +182,22 @@ h1{
       background-image: url("../assets/tutoriales/prensafrancesa/prensafrancesa_portada_2.png");
 }
 
+.ph3{
+      background-image: url("../assets/tutoriales/chemex/Tienda-de-Café-tutorial_250-scaled.jpg");
+}
+
+.ph4{
+      background-image: url("../assets/tutoriales/aeropress/Aeropress_portada.jpg");
+}
+
+.ph5{
+      background-image: url("../assets/tutoriales/metodo-cafetera-italiana/Tienda-de-Café-tutorial_040-scaled.jpg");
+}
+
+.ph6{
+      background-image: url("../assets/tutoriales/metodo-filtro-papel/Tienda-de-Café-tutorial_034-scaled.jpg");
+}
+
 .tutorial-footer{
     background-image: url("../assets/tutoriales/Metodos_Footer.jpg");
     display: flex;
