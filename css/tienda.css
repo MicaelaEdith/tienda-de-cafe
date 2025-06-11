@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+  --background-color: #111111;
+  --primary-color: #c7a17a;
+  --links-color: rgb(177, 177, 177);
+  font-family: "Lato";
+  --text-color: rgb(111, 111, 111);
+  
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card img:hover{
+    src: url();
+}
