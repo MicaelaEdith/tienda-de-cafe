@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/producto.css">
+    <title>Café Scegliere - Tienda de Café</title>
+</head>
+<body>
+
+    <main>
+
+        <div class="imgs">
+            <img src="../../assets/tienda/SCEGLIERE1.jpg" alt="">
+            <img src="../../assets/tienda/SCEGLIERE2.jpg" alt="">
+            <img src="../../assets/tienda/SCEGLIERE3.jpg" alt="">
+
+        </div>
+
+        <img src="../../assets/tienda/SCEGLIERE1.jpg" alt="" class="main-img">
+
+        <div class="cafe-texto">
+            <h2>Café Scegliere</h2>
+            <p><b>Un café de cuerpo medio, levemente acidulado y estructuralmente complejo.</b></p>
+            <p>Una combinación única, lograda por la combinación de tres varietales: Bourbon, Colombia Supremo y Moka.</p>
+              <p><b>Notas: cítricas y frutos secos tostados</b></p>
+        </div>
+
+
+    </main>
+    
+        <footer>
+        <div class="logo-div"><img src="../../assets/tienda-de-cafe.png" alt="" class="logo-footer"></div>
+
+        <div>
+            <h4>CONTENIDOS</h4>
+            <a href="#home">Inicio</a>
+            <a href="../tienda.html">Nuestro Café</a>
+            <a href="">Locales</a>
+            <a href="">Nuestro Menú</a>
+        </div>
+
+        <div>
+            <h4>NECESITÁS AYUDA</h4>
+            <a href="../tutoriales.html">Tutoriales</a>
+            <a href="">Trabajá en TDC</a>
+            <a href="">Franquicias</a>
+            <a href="">Contacto</a>
+        </div>
+
+        <div class="text-align-center">
+            <h4>¡SUSCRIBITE PARA RECIBIR DESCUENTOS Y NOVEDADES EXCLUSIVAS</h4>
+            <input type="text" name="" placeholder="Tu nombre" id="name-form">
+            <input type="email" name="" placeholder="Tu email" id="mail-form">
+            <button class="btn">SUSCRIBIRME</button>
+            <form action="">
+            <h4>CONECTATE CON NOSOTROS</h4>
+            <a href="facebook.com"><img src="../../assets/facebook_2.png" alt="Logo y link a facebook"class = "social-footer" ></a>
+            <a href="instagram.com"><img src="../../assets/instagram_2.png" alt="Logo y link a Instagram" class = "social-footer"></a>
+            </form>
+        </div>
+
+    </footer>
+        <div class="copyright">
+            <p>© Copyright 2021 Tienda de café - Todos los derechos reservados.</p>
+            <p>Todos los logos, productos, marcas y nombres aqui utilizados son propiedad registrada.</p>
+        </div>
+
+        <script>
+    const thumbs = document.querySelectorAll('.imgs img');
+    const mainImg = document.querySelector('.main-img');
+    const originalSrc = mainImg.src;
+
+    thumbs.forEach(img => {
+        img.addEventListener('mouseover', () => {
+            mainImg.src = img.src;
+        });
+
+        img.addEventListener('mouseout', () => {
+            mainImg.src = originalSrc;
+        });
+    });
+</script>
+
+</body>
+</html>

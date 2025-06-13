@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+  --background-color: #111111;
+  --primary-color: #c7a17a;
+  --links-color: rgb(177, 177, 177);
+  font-family: "Lato";
+    --text-color: rgb(74, 74, 74);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.imgs{
+    width: 10VW !important;
+    display: flex;
+    flex-direction: column;
+    margin: 3vw;
+    margin-left: 3vw !important;
+}
+
+.imgs img{
+    width: 10vw;
+    margin-bottom: 3vh;
+}
+
+.imgs img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.main-img{
+    height: auto;
+    width: 33vw;
+    margin: 6vh;
+}
+
+h2{
+    color: var(--text-color);
+    font-family: Impact, sans-serif;
+    font-weight: 400;
+}
+
+.cafe-texto{
+    width: 30vw;
+    margin-left: 4vw;
+    margin-top: 6vh;
+}
+
+p{
+    font-size: .9em;
+    margin-top: 2vh;
+    color: var(--text-color);
+}
