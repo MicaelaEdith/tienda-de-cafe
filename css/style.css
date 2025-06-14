@@ -15,6 +15,7 @@ body{
 }
 
 /* Estilos generales del navbar */
+
 .navbar {
     display: flex;
     justify-content: flex-start;
@@ -44,6 +45,9 @@ body{
 
 .vh-page-navbar-solid{
     height: 22vh;
+}
+.static-navbar{
+    margin-top: 15vh;
 }
 
 /* Botón hamburguesa */
@@ -225,6 +229,9 @@ footer .btn{
 
      .menu-toggle {
         display: flex;
+        margin: auto;
+        margin-left: 10px;
+        margin-right: 0;
     }
 
     .nav-links {
@@ -263,6 +270,13 @@ footer .btn{
         padding-left: 16px;
         font-size: 0.8em;
     }
+
+    .logo-navbar{
+        height: 60%;
+        width: auto;
+        margin-left: 35%;
+    }
+
 
     footer{
         flex-wrap: wrap;
