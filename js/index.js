@@ -1,15 +1,15 @@
 function handleNavbarScroll() {
-  const navbar = document.querySelector('.navbar');
-  const homeSection = document.querySelector('#header');
-  const homeHeight = homeSection.offsetHeight;
+    const navbar = document.querySelector('.navbar');
+    const homeSection = document.querySelector('#header');
+    const homeHeight = homeSection.offsetHeight;
 
-  if (window.scrollY > homeHeight * 0.4) {
-    navbar.classList.remove('transparent');
-    navbar.classList.add('solid');
-  } else {
-    navbar.classList.remove('solid');
-    navbar.classList.add('transparent');
-  }
+    if (window.scrollY > homeHeight * 0.4) {
+        navbar.classList.remove('transparent');
+        navbar.classList.add('solid');
+    } else {
+        navbar.classList.remove('solid');
+        navbar.classList.add('transparent');
+    }
 }
 
 
@@ -46,4 +46,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-window.addEventListener('scroll', handleNavbarScroll);
+const navbar = document.querySelector('.navbar');
+const logoNavbar = document.querySelector('.logo-navbar');
+const preNavbarHeight = document.querySelector('.pre-navbar').offsetHeight;
+const navbarOffsetTop = navbar.offsetTop;
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY || window.pageYOffset;
+
+    if (scrollTop > navbarOffsetTop + preNavbarHeight) {
+        logoNavbar.style.height = '95%';    
+        navbar.style.height = '5vh';
+        navbar.classList.add('fixed');
+    } else {
+        navbar.classList.remove('fixed');  
+        logoNavbar.style.height = '80%';  
+        navbar.style.height = '12vh';
+    }
+});
