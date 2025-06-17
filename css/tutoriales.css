@@ -10,6 +10,14 @@
   --text-color: rgb(111, 111, 111);
 }
 
+body{
+    margin: 0;
+} 
+
+.pre-navbar{
+    margin: 0;
+}
+
 main{
     font-family: "Oswald";
     font-weight: 200;
@@ -127,13 +135,11 @@ section{
     background-image: url("../assets/tutoriales/Tienda-de-Café-tutorial_6.jpg");
 }
 
-
 .data-tutorial{
     display: flex;
 flex-direction: column;
     margin: auto;
 }
-
 
 .tutorial h2{
     font-family: "Oswald";
@@ -284,7 +290,7 @@ h1{
     margin-top: 3vh;
 }
 
-.card img, div{
+.card div{
     margin: 3vh;
 }
 
@@ -328,9 +334,6 @@ h1{
 }
 
 @media (max-width: 992px) {
-
-
-
     .card{
         width: 90%;
         flex-direction: column;
@@ -342,4 +345,17 @@ h1{
         width: 90%;
         height: auto;
     }
+
+    .logo-nav-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .logo-navbar{
+        height: 8vh !important;
+        width: auto;
+    }
+
 }

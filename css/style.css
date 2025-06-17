@@ -52,9 +52,9 @@ body{
 }
 
 .logo-navbar{
-    height: 80%;
+    height: 80% !important;
     width: auto;
-    margin-left: 18px;
+    margin-left: 18px !important;
     margin-right: 5vw;
 }
 
@@ -295,7 +295,7 @@ footer .btn{
     }
 
     .logo-navbar{
-        height: 7vh !important;
+        height: 8vh !important;
         width: auto;
     }
 
