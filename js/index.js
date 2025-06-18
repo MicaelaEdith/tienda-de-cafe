@@ -63,4 +63,5 @@ window.addEventListener('scroll', () => {
         logoNavbar.style.height = '80%';  
         navbar.style.height = '12vh';
     }
+    handleNavbarScroll();
 });
