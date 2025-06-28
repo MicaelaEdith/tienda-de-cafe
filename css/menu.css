@@ -113,3 +113,18 @@ section{
     font-family: "Oswald";
     margin-right: 2vw;
 }
+
+
+@media (max-width: 962px) {
+
+    .navbar{
+        height: 18vh;
+    }
+
+    .logo-navbar{
+        height: 60% !important;
+        width: auto;
+        margin-left: 18px !important;
+        margin-right: 5vw;
+    }
+}

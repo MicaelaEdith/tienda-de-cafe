@@ -31,16 +31,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // DATOS PARA EL SEGUNDO CARRUSEL (PRODUCTOS)
     const productCarouselData = [
-        { name: 'Café Brasil', url: 'assets/home/Productos_cafe_packs_BRASIL_frente-600x600.jpg', link: '../cafe-brasil.html'},
-        { name: 'Café Barista', url: 'assets/home/Productos_cafe_packs_BARISTA_frente-600x600.jpg', link: '#' },
-        { name: 'Café Minka', url: 'assets/home/Productos_cafe_packs_MINKA_frente-600x600.jpg', link: '#' },
-        { name: 'Café Colombia', url: 'assets/home/Productos_cafe_packs_COLOMBIA_frente-600x600.jpg', link: '#' },
-        { name: 'Café Scegliere', url: 'assets/home/Productos_cafe_packs_SCEGLIERE_frente-600x600.jpg', link: '#' },
-        { name: 'Café Descafeinado', url: 'assets/home/Productos_cafe_packs_descaf_frente-600x600.jpg', link: '#' },
-        { name: 'Cápsulas de Café Barista', url: 'assets/home/capsulas_taza_barista-600x600.jpg', link: '#' },
-        { name: 'Cápsulas de Café Scegliere', url: 'assets/home/capsulas_taza_scegliere-600x600.jpg', link: '#' },
-        { name: 'Cápsulas de Café Colombia', url: 'assets/home/capsulas_taza_colombia-600x600.jpg', link: '#' },
-        { name: 'Cápsulas de Café Minka', url: 'assets/home/capsulas_taza_minka-600x600.jpg', link: '#' }
+        { name: 'Café Brasil', url: 'assets/home/Productos_cafe_packs_BRASIL_frente-600x600.jpg', link: './pages/tienda/brasil.html'},
+        { name: 'Café Barista', url: 'assets/home/Productos_cafe_packs_BARISTA_frente-600x600.jpg', link: './pages/tienda/barista.html' },
+        { name: 'Café Minka', url: 'assets/home/Productos_cafe_packs_MINKA_frente-600x600.jpg', link: './pages/tienda/minka.html' },
+        { name: 'Café Colombia', url: 'assets/home/Productos_cafe_packs_COLOMBIA_frente-600x600.jpg', link: './pages/tienda/colombia.html' },
+        { name: 'Café Scegliere', url: 'assets/home/Productos_cafe_packs_SCEGLIERE_frente-600x600.jpg', link: './pages/tienda/scegliere.html' },
+        { name: 'Café Descafeinado', url: 'assets/home/Productos_cafe_packs_descaf_frente-600x600.jpg', link: './pages/tienda/descafeinado.html' },
+        { name: 'Cápsulas de Café Barista', url: 'assets/home/capsulas_taza_barista-600x600.jpg', link: './pages/tienda/capsula-barista.html' },
+        { name: 'Cápsulas de Café Scegliere', url: 'assets/home/capsulas_taza_scegliere-600x600.jpg', link: './pages/tienda/capsula-scegliere.html' },
+        { name: 'Cápsulas de Café Colombia', url: 'assets/home/capsulas_taza_colombia-600x600.jpg', link: './pages/tienda/capsula-colombia.html' },
+        { name: 'Cápsulas de Café Minka', url: 'assets/home/capsulas_taza_minka-600x600.jpg', link: './pages/tienda/capsula-minka.html' }
     ];
 
     // FUNCIÓN PARA GENERAR EL PRIMER CARRUSEL (BANNERS)
