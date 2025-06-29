@@ -127,6 +127,10 @@ span{
       margin: auto;
    }
 
+   .column1{
+      border-right: 0 !important;
+   }
+
    h1{
       font-size: .8em;
       margin-top: 3vh;
