@@ -107,7 +107,6 @@ header {
 /* --- Estilos para el título "NUESTROS PRODUCTOS" --- */
 .products-section-title {
     text-align: center;
-    margin-top: 60px;
     margin-bottom: 30px;
     position: relative;
 }
@@ -115,10 +114,8 @@ header {
 .products-section-title h2 {
     font-size: 2.5em;
     color: #333;
-    margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding-top: 4vh;
 }
 
 .title-underline {
@@ -315,35 +312,6 @@ header {
     border-radius: 0;
 }
 
-
-/* --- Media Queries para responsividad de Experiencias/Platos --- */
-@media (max-width: 767.98px) {
-    .experience-title {
-        font-size: 1.8em;
-    }
-    .experience-subtitle {
-        font-size: 0.9em;
-    }
-    .experience-content {
-        bottom: 15px;
-        left: 15px;
-        right: 15px;
-    }
-    .experience-btn {
-        padding: 6px 20px;
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .experience-card {
-        margin-bottom: 20px;
-    }
-    .experience-title {
-        font-size: 1.6em;
-    }
-}
-
 /* --- Estilos para la sección "¿CUÁL VAS A ELEGIR HOY?" --- */
 /* Sección general */
 .coffee-choice-section {
@@ -355,7 +323,6 @@ header {
 /* Fila principal con imagen centrada y textos alineados */
 .coffee-choice-flex {
   display: flex;
-  gap: 30px;
   margin-top: 40px;
 }
 
@@ -366,17 +333,16 @@ header {
 
 /* Textos laterales */
 .coffee-grid-item {
-  flex: 1 1 25%;
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    padding: 20px;
 }
 
 .coffee-grid-item h3 {
   font-family: "Oswald", sans-serif;
-  font-size: 1.6em;
+  font-size: 1.4em;
   color: var(--primary-color);
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -384,33 +350,114 @@ header {
 }
 
 .coffee-grid-item p {
-  font-size: 0.9em;
+  font-size: 0.85em;
   line-height: 1.6;
   color: #555;
 }
 
 /* Imagen central */
 .coffee-grid-center-image {
-  flex: 1 1 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 45%;
 }
 
-/* Responsivo */
+.column-main{
+    width: 30%;
+}
+
+.column-1-text{
+    text-align: right;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.container{
+    margin-top: 0;
+}
+
+@media (max-width: 962px) {
+
+    .container.my-5{
+        margin-top:0;
+    }
+
+    .products-section-title{
+        padding-top: 0;
+        margin-top: 5px;
+    }
+
+    .products-section-title h2{
+        padding-top: 0;
+        margin-top: 5px;
+    }
+
+    .coffee-choice-flex {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+    }
+
+    .coffee-grid-item{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .column-main{
+        width: 100%;
+ 
+    }
+
+    .column-1-text{
+        text-align: center;
+    }
+
+    .coffee-grid-center-image{
+        width: 75%;
+        height: auto;
+    }
+}
+
+/* --- Media Queries para responsividad de Experiencias/Platos --- */
 @media (max-width: 767.98px) {
-  .coffee-choice-flex {
-    flex-direction: column;
-  }
+    .experience-title {
+        font-size: 1.8em;
+    }
 
-  .coffee-grid-item {
-    text-align: center;
-  }
+    .experience-subtitle {
+        font-size: 0.9em;
+    }
 
-  .coffee-grid-center-image {
-    order: -1;
-    margin-bottom: 20px;
-  }
+    .experience-content {
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+    }
+
+    .experience-btn {
+        padding: 6px 20px;
+        font-size: 0.9em;
+    }
+
+    .coffee-grid-item {
+        text-align: center;
+    }
+
+    .coffee-grid-center-image {
+        order: -1;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .experience-card {
+        margin-bottom: 20px;
+    }
+    .experience-title {
+        font-size: 1.6em;
+    }
 }
