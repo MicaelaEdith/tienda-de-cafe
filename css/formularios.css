@@ -109,7 +109,8 @@ span{
 
  .column img{
    width: 5vw;
-   margin-top: 2vh;
+   margin-top: 1vh;
+   margin-bottom: 2vh;
  }
 
  @media (max-width: 962px) {
@@ -148,4 +149,5 @@ span{
       width: 15vw;
       font-size: small;
    }
+   
  }
