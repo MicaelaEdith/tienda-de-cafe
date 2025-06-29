@@ -103,8 +103,6 @@ header {
   color: #eaeaea;
 }
 
-/* --- Estilos específicos para el segundo carrusel (PRODUCTOS) --- */
-/* --- Estilos para el título "NUESTROS PRODUCTOS" --- */
 .products-section-title {
     text-align: center;
     margin-bottom: 30px;
@@ -420,6 +418,25 @@ header {
         width: 75%;
         height: auto;
     }
+
+    .carousel img {
+        height: 65vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .carousel h5{
+        font-size: small;
+    }
+
+    .carousel h1{
+        font-size: medium;
+    }
+
+    .carousel p{
+        font-size: smaller;
+    }
+
 }
 
 /* --- Media Queries para responsividad de Experiencias/Platos --- */

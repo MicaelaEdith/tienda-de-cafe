@@ -139,4 +139,9 @@ span{
       max-width: 60%;
       text-align: center;
    }
+
+   .btn-form{
+      width: 15vw;
+      font-size: small;
+   }
  }
