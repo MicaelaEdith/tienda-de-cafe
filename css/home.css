@@ -437,7 +437,15 @@ header {
         font-size: smaller;
     }
 
+    .carousel-highlighted-text{
+        width: 90%;
+    }
+
+    .carousel-caption{
+        width: 65%;
+    }
 }
+
 
 /* --- Media Queries para responsividad de Experiencias/Platos --- */
 @media (max-width: 767.98px) {
