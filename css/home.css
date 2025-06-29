@@ -419,21 +419,21 @@ header {
         height: auto;
     }
 
-    .carousel img {
+    .car1 .carousel img {
         height: 65vh;
         object-fit: cover;
         object-position: center;
     }
 
-    .carousel h5{
+    .car1 .carousel h5{
         font-size: small;
     }
-
+    
     .carousel h1{
-        font-size: medium;
+        font-size: .6em;
     }
 
-    .carousel p{
+    .car1 .carousel p{
         font-size: smaller;
     }
 
